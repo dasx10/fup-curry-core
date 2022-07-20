@@ -6,7 +6,7 @@
 ### Example
 
 ```
-import curry from 'fup';
+import curry from 'fup-curry-core';
 
 const add  = (y, x) => y + x; // function (x);
 const addC = curry(addStr);   // function (x);

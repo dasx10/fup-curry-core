@@ -1,10 +1,11 @@
 {
   "name": "fup-curry-core",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "curry, function",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "uglifyjs ./source.js -cmo ./index.js",
+    "upload": "npm run build & npm publish"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/dasx10/fup-curry-core/issues"
   },
-  "homepage": "https://github.com/dasx10/fup-curry-core#readme"
+  "homepage": "https://github.com/dasx10/fup-curry-core#readme",
+  "dependencies": {
+    "fup-curry-limit-core": "^1.0.6",
+    "fup-curry-result-type": "^1.0.2",
+    "fup-tuple-consistent-type": "^1.0.1"
+  }
 }
