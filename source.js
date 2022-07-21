@@ -3,7 +3,12 @@ const curryLimitCore = require('fup-curry-limit-core');
 const curryCore = (executor, ...parameters) => {
   const limit = executor.length;
   return parameters.length < limit
-    ? (...nextParameters) => curryLimitCore(limit, ...parameters, ...nextParameters)
+    ? Object.defineProperty((...nextParameters) => curryLimitCore(limit, executor, ...parameters, ...nextParameters), 'length', {
+      enumerable   : false,
+      configurable : false,
+      writable     : false,
+      value        : limit - parameters.length
+    })
     : executor(...parameters);
 };
 
