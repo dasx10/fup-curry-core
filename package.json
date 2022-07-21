@@ -1,6 +1,6 @@
 {
   "name": "fup-curry-core",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "curry, function",
   "main": "index.js",
   "types": "index.d.ts",
