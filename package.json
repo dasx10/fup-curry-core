@@ -3,6 +3,7 @@
   "version": "1.0.6",
   "description": "curry, function",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "build": "uglifyjs ./source.js -cmo ./index.js",
     "upload": "npm run build & npm publish"
@@ -15,7 +16,7 @@
     "curry",
     "function"
   ],
-  "author": "Yevhenii Kleshchev",
+  "author": "Yevhenii Kleshchev <dasx10@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dasx10/fup-curry-core/issues"
