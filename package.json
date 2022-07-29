@@ -1,6 +1,6 @@
 {
   "name": "fup-curry-core",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "curry, function",
   "main": "index.js",
   "types": "index.d.ts",
@@ -24,7 +24,7 @@
   "homepage": "https://github.com/dasx10/fup-curry-core#readme",
   "dependencies": {
     "fup-curry-limit-core": "^1.0.6",
-    "fup-curry-result-type": "^1.0.3",
+    "fup-curry-result-type": "^1.0.4",
     "fup-tuple-consistent-type": "^1.0.1"
   }
 }

@@ -5,10 +5,10 @@ export type CurryCore <
   ExpectedParameters extends readonly [unknown, unknown, ...unknown[]] = readonly [unknown, unknown, ...unknown[]],
   ExpectedResult     extends          unknown                          = unknown
 > = <
-  Parameters extends ExpectedParameters,
-  Result     extends ExpectedResult,
-  Arguments  extends TupleConsistentType<Parameters>,
-> (executor: (...parameters: Parameters) => Result, ...arguments: Arguments) => CurryResultType<Arguments, Parameters, Result>;
+    Parameters extends ExpectedParameters,
+    Result     extends ExpectedResult,
+    Arguments  extends TupleConsistentType<Parameters>,
+  > (executor: <X>(...parameters: Parameters) => Result, ...arguments: Arguments) => CurryResultType<Arguments, Parameters, Result>;
 
 /**
  * - We’ll create a helper function `curry(executor);`
